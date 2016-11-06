@@ -19,48 +19,19 @@ Dependencies:
 
 ```javascript
 var transparent = require('hast-util-transparent');
-```
 
-Given a non-transparent value:
+transparent({
+  type: 'element',
+  tagName: 'div',
+  children: [{type: 'text', value: 'Alpha'}]
+}); //=> false
 
-```javascript
-var result = transparent({
-    'type': 'element',
-    'tagName': 'div',
-    'children': [{
-        'type': 'text',
-        'value': 'Alpha'
-    }]
-});
-```
-
-Yields:
-
-```js
-false
-```
-
-Given a transparent element:
-
-```javascript
-result = transparent({
-    'type': 'element',
-    'tagName': 'a',
-    'properties': {
-        'href': '#bravo',
-        'title': 'Charlie'
-    },
-    'children': [{
-        'type': 'text',
-        'value': 'Delta'
-    }]
-});
-```
-
-Yields:
-
-```js
-true
+transparent({
+  type: 'element',
+  tagName: 'a',
+  properties: {href: '#bravo', title: 'Charlie'},
+  children: [{type: 'text', value: 'Delta'}]
+}); //=> true
 ```
 
 ## API
