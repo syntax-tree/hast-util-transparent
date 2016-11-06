@@ -10,9 +10,6 @@ Check if a [node][] is a [**transparent**][spec] [element][].
 npm install hast-util-transparent
 ```
 
-**hast-util-transparent** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
 
 Dependencies:
@@ -40,9 +37,13 @@ transparent({
 
 Check if the given value is a [**transparent**][spec] [element][].
 
-**Parameters**: `node` (`*`) — Value to check.
+###### Parameters
 
-**Returns**: `boolean`, whether `node` passes the test.
+`node` (`*`) — Value to check.
+
+###### Returns
+
+`boolean` — whether `node` passes the test.
 
 ## License
 
@@ -59,8 +60,6 @@ Check if the given value is a [**transparent**][spec] [element][].
 [coverage-page]: https://codecov.io/github/wooorm/hast-util-transparent?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-transparent/releases
 
 [license]: LICENSE
 
