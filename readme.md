@@ -51,13 +51,13 @@ Check if the given value is a [**transparent**][spec] [element][].
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/hast-util-transparent.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-transparent.svg
 
-[build-page]: https://travis-ci.org/wooorm/hast-util-transparent
+[build-page]: https://travis-ci.org/syntax-tree/hast-util-transparent
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/hast-util-transparent.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-transparent.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/hast-util-transparent?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-transparent?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -65,8 +65,8 @@ Check if the given value is a [**transparent**][spec] [element][].
 
 [author]: http://wooorm.com
 
-[node]: https://github.com/wooorm/hast#node
+[node]: https://github.com/syntax-tree/hast#node
 
-[element]: https://github.com/wooorm/hast#element
+[element]: https://github.com/syntax-tree/hast#element
 
 [spec]: https://html.spec.whatwg.org/#transparent-content-models
