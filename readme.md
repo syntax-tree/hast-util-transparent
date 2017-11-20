@@ -12,8 +12,6 @@ npm install hast-util-transparent
 
 ## Usage
 
-Dependencies:
-
 ```javascript
 var transparent = require('hast-util-transparent');
 
