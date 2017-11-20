@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var transparent = require('./index.js');
 
-/* Tests. */
 test('transparent', function (t) {
   t.equal(
     transparent(),

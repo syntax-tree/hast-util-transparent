@@ -1,12 +1,9 @@
 'use strict';
 
-/* Dependencies. */
 var is = require('hast-util-is-element');
 
-/* Expose. */
 module.exports = transparent;
 
-/* Tag-names. */
 var names = [
   'ol',
   'ul',
