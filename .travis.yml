@@ -4,21 +4,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: tituswormer@gmail.com
-    api_key:
-      secure: KEuX6/ZPCv9MQTG0FhZEhcqfg6h5G6eMY/PX+5RI1P/70yBe2+H0eeZYtKt1HJ0uL2i9ROKMAJqsiolKeSo63gr49NFbKkTIwwljtPz74W3nmPHMQsAnzKqid6sPvpieWMLtbwW9qc93a4KoP6mZ72ljbOcRrUp2/hlLPJbyA8WuWnyfdh+zJV8d1qhiGCiYhfjNsCMLr8+j4Xhpqt0bm9XjrZ2tfHh7/VF8T8PbLtEiNwoMFlRRpvyGrjCv0wI1McM7AyyT6TT06t0MKZSYk4GUWkoacz8xCmjtLD2GIjzkv7JsWJ2qQb7sN9hBxPhrhJsprN/ZY2f8GYLXVn7GwQjIY5ZnPeC17/NOd6BxP/jmXhS10piU/fIdRU8wOKhvIkzXso4Aaz5TAhEY3qkocsIuBRLMHo4pu7NVqIB40zuDxMXqgDBN5B0PYRNGhT5j5h74wCwO0IO8ge6O9bqDyR0iGAXzuKbrvpir4d2LFXSOvqVoN9RrHzsH4YgIq6dTcd5lCsFJ3RLGYaJJrZlVYLiI3+It2uub+WbuGWQIWaQKI0CrYXCqXz43VAb5Uyxlv0DSMp6qt+BuUrELvodkPCrkAzdt2cypp0S0yarVcNMlGE43DWbnQE+9xABaYkUkf4x/74pjDSNyJ7J4xDIXThP3M0g31qnwumcCp0+2SLw=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: f5+SKeUPImw8pTAOVgOu51eu5ujhzHMVcahAENwaDWhtIMQZucp/m6CHpqkYyfvxM7MinwX7rpbJF+8/5VmcaoGqveoKcFL00TF4u7ARDCzvNOVfy3icsw137tiyG6id3rWHnUW0+x1HL2nuUDqWzfGiZpw1ol/mtbFnJpP0TILDvUfHA60QWosgCN3huPQjlLX+vagK/gsS3b/1JoEjyiYZn0qEa9djqSbHZNmDfqIxrp0LPqB5RbR2Lga2bxd5ODaw1b8C7bNVTAHEHpW67bjkNk9yGRQHzRD93HFncBTG3EUbAntcnmi5PYQFkaM2ik0tALcgQ9LhjKboeabOL3MSQ7OtGI+ShTgDP0WhzexGd5qXKSjA5Olla0op2ZKPHMYUFoFDptoBU+HtZ1XRn4yz88NSKT8npdVCdGrFGL3eX3tVEpJAI8g5xsP+7plpube2rrCtfguvwSO53g9J9VrmADB7A/eosi1CIQlEjQQMlfYZn4ugp1OA4u88R4BIu1aZU39b3tGXgAN6SI2V7HBwmkR6GdICLVol23/QL6IHVaSpiJKgoa50pNBBiASGN3YL8Z8yi++IUP/Cg/63CcNumLrO65EGcYs8t6/9TLWlG77VdNtr3laJnlwESiQUnHwFYjAMNXgVLtqi912VRjlRr4MJHf2COXJ9BF510MY=
-    file:
-      - "hast-util-transparent.js"
-      - "hast-util-transparent.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: f5+SKeUPImw8pTAOVgOu51eu5ujhzHMVcahAENwaDWhtIMQZucp/m6CHpqkYyfvxM7MinwX7rpbJF+8/5VmcaoGqveoKcFL00TF4u7ARDCzvNOVfy3icsw137tiyG6id3rWHnUW0+x1HL2nuUDqWzfGiZpw1ol/mtbFnJpP0TILDvUfHA60QWosgCN3huPQjlLX+vagK/gsS3b/1JoEjyiYZn0qEa9djqSbHZNmDfqIxrp0LPqB5RbR2Lga2bxd5ODaw1b8C7bNVTAHEHpW67bjkNk9yGRQHzRD93HFncBTG3EUbAntcnmi5PYQFkaM2ik0tALcgQ9LhjKboeabOL3MSQ7OtGI+ShTgDP0WhzexGd5qXKSjA5Olla0op2ZKPHMYUFoFDptoBU+HtZ1XRn4yz88NSKT8npdVCdGrFGL3eX3tVEpJAI8g5xsP+7plpube2rrCtfguvwSO53g9J9VrmADB7A/eosi1CIQlEjQQMlfYZn4ugp1OA4u88R4BIu1aZU39b3tGXgAN6SI2V7HBwmkR6GdICLVol23/QL6IHVaSpiJKgoa50pNBBiASGN3YL8Z8yi++IUP/Cg/63CcNumLrO65EGcYs8t6/9TLWlG77VdNtr3laJnlwESiQUnHwFYjAMNXgVLtqi912VRjlRr4MJHf2COXJ9BF510MY=
+  file:
+    - "hast-util-transparent.js"
+    - "hast-util-transparent.min.js"
+  on:
+    tags: true
+    node: '9.0'
