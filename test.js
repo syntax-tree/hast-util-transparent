@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var transparent = require('./index.js');
+var transparent = require('.');
 
 test('transparent', function (t) {
   t.equal(
