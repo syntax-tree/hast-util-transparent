@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-var is = require('hast-util-is-element');
+var is = require('hast-util-is-element')
 
-module.exports = transparent;
+module.exports = transparent
 
 var names = [
   'ol',
@@ -26,9 +26,9 @@ var names = [
   'map',
   'noscript',
   'canvas'
-];
+]
 
 /* Check if a node is a transparent element */
 function transparent(node) {
-  return is(node, names);
+  return is(node, names)
 }

@@ -13,20 +13,20 @@ npm install hast-util-transparent
 ## Usage
 
 ```javascript
-var transparent = require('hast-util-transparent');
+var transparent = require('hast-util-transparent')
 
 transparent({
   type: 'element',
   tagName: 'div',
   children: [{type: 'text', value: 'Alpha'}]
-}); //=> false
+}) // => false
 
 transparent({
   type: 'element',
   tagName: 'a',
   properties: {href: '#bravo', title: 'Charlie'},
   children: [{type: 'text', value: 'Delta'}]
-}); //=> true
+}) // => true
 ```
 
 ## API

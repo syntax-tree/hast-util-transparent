@@ -1,32 +1,24 @@
-'use strict';
+'use strict'
 
-var test = require('tape');
-var transparent = require('.');
+var test = require('tape')
+var transparent = require('.')
 
-test('transparent', function (t) {
-  t.equal(
-    transparent(),
-    false,
-    'should return `false` without node'
-  );
+test('transparent', function(t) {
+  t.equal(transparent(), false, 'should return `false` without node')
 
-  t.equal(
-    transparent(null),
-    false,
-    'should return `false` with `null`'
-  );
+  t.equal(transparent(null), false, 'should return `false` with `null`')
 
   t.equal(
     transparent({type: 'text'}),
     false,
     'should return `false` when without `element`'
-  );
+  )
 
   t.equal(
     transparent({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
-  );
+  )
 
   t.equal(
     transparent({
@@ -36,7 +28,7 @@ test('transparent', function (t) {
     }),
     false,
     'should return `false` when without not transparent'
-  );
+  )
 
   t.equal(
     transparent({
@@ -47,7 +39,7 @@ test('transparent', function (t) {
     }),
     true,
     'should return `true` when with transparent'
-  );
+  )
 
-  t.end();
-});
+  t.end()
+})
