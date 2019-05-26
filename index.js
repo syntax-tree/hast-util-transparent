@@ -28,7 +28,6 @@ var names = [
   'canvas'
 ]
 
-/* Check if a node is a transparent element */
 function transparent(node) {
   return is(node, names)
 }
