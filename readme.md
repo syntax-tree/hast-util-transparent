@@ -52,6 +52,11 @@ Check if the given value is a [*transparent*][spec] [*element*][element].
 
 `boolean` — whether `node` passes the test.
 
+## Security
+
+`hast-util-transparent` does not change the syntax tree so there are no openings
+for [cross-site scripting (XSS)][xss] attacks.
+
 ## Contribute
 
 See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
@@ -111,3 +116,5 @@ abide by its terms.
 [hast]: https://github.com/syntax-tree/hast
 
 [element]: https://github.com/syntax-tree/hast#element
+
+[xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
