@@ -1,15 +1,17 @@
 {
   "name": "hast-util-transparent",
   "version": "1.0.3",
-  "description": "Check if a node is a transparent element",
+  "description": "hast utility to check if a node is a transparent element",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "category",
-    "transparent",
-    "util",
-    "utility"
+    "transparent"
   ],
   "repository": "syntax-tree/hast-util-transparent",
   "bugs": "https://github.com/syntax-tree/hast-util-transparent/issues",
