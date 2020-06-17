@@ -3,7 +3,7 @@
 var test = require('tape')
 var transparent = require('.')
 
-test('transparent', function(t) {
+test('transparent', function (t) {
   t.equal(transparent(), false, 'should return `false` without node')
 
   t.equal(transparent(null), false, 'should return `false` with `null`')
