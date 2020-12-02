@@ -1,33 +1,27 @@
 'use strict'
 
-var is = require('hast-util-is-element')
+var convert = require('hast-util-is-element/convert')
 
-module.exports = transparent
-
-var names = [
-  'ol',
-  'ul',
+module.exports = convert([
+  'a',
+  'audio',
+  'canvas',
+  'datalist',
   'dd',
+  'del',
+  'ins',
+  'map',
+  'menu',
+  'noscript',
+  'object',
+  'ol',
   'picture',
+  'select',
   'table',
-  'thead',
   'tbody',
   'tfoot',
+  'thead',
   'tr',
-  'select',
-  'datalist',
-  'menu',
-  'a',
-  'ins',
-  'del',
-  'object',
-  'video',
-  'audio',
-  'map',
-  'noscript',
-  'canvas'
-]
-
-function transparent(node) {
-  return is(node, names)
-}
+  'ul',
+  'video'
+])
