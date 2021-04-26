@@ -1,5 +1,2 @@
 coverage/
-hast-util-transparent.js
-hast-util-transparent.min.js
-*.json
 *.md

@@ -1,8 +1,6 @@
-'use strict'
+import {convertElement} from 'hast-util-is-element'
 
-var convert = require('hast-util-is-element/convert')
-
-module.exports = convert([
+export const transparent = convertElement([
   'a',
   'audio',
   'canvas',

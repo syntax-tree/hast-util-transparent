@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var transparent = require('.')
+import test from 'tape'
+import {transparent} from './index.js'
 
 test('transparent', function (t) {
   t.equal(transparent(), false, 'should return `false` without node')
