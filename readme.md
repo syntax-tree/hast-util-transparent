@@ -25,7 +25,7 @@ npm install hast-util-transparent
 ## Use
 
 ```js
-var transparent = require('hast-util-transparent')
+import {transparent} from 'hast-util-transparent'
 
 transparent({
   type: 'element',
