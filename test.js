@@ -1,7 +1,7 @@
 import test from 'tape'
 import {transparent} from './index.js'
 
-test('transparent', function (t) {
+test('transparent', (t) => {
   t.equal(transparent(), false, 'should return `false` without node')
 
   t.equal(transparent(null), false, 'should return `false` with `null`')
