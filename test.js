@@ -1,24 +1,25 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {transparent} from './index.js'
 
-test('transparent', (t) => {
-  t.equal(transparent(), false, 'should return `false` without node')
+test('transparent', () => {
+  assert.equal(transparent(), false, 'should return `false` without node')
 
-  t.equal(transparent(null), false, 'should return `false` with `null`')
+  assert.equal(transparent(null), false, 'should return `false` with `null`')
 
-  t.equal(
+  assert.equal(
     transparent({type: 'text'}),
     false,
     'should return `false` when without `element`'
   )
 
-  t.equal(
+  assert.equal(
     transparent({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
   )
 
-  t.equal(
+  assert.equal(
     transparent({
       type: 'element',
       tagName: 'div',
@@ -28,7 +29,7 @@ test('transparent', (t) => {
     'should return `false` when without not transparent'
   )
 
-  t.equal(
+  assert.equal(
     transparent({
       type: 'element',
       tagName: 'a',
@@ -38,6 +39,4 @@ test('transparent', (t) => {
     true,
     'should return `true` when with transparent'
   )
-
-  t.end()
 })
