@@ -206,7 +206,7 @@ abide by its terms.
 
 [coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
-[spec]: https://html.spec.whatwg.org/#transparent-content-models
+[spec]: https://html.spec.whatwg.org/multipage/dom.html#transparent-content-models
 
 [hast]: https://github.com/syntax-tree/hast
 
