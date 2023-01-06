@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {transparent} from './index.js'
+import * as mod from './index.js'
 
 test('transparent', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['transparent'],
+    'should expose the public api'
+  )
+
   assert.equal(transparent(), false, 'should return `false` without node')
 
   assert.equal(transparent(null), false, 'should return `false` with `null`')
