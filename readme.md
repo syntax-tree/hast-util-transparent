@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is [*transparent*][spec] content.
+[hast][] utility to check if a node has a [*transparent content model*][spec].
 
 ## Contents
 
@@ -17,7 +17,7 @@
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`transparent(node)`](#transparentnode)
+    *   [`transparent(value)`](#transparentvalue)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Security](#security)
@@ -38,7 +38,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-transparent
@@ -79,20 +79,25 @@ transparent({
 
 ## API
 
-This package exports the identifier `transparent`.
+This package exports the identifier [`transparent`][transparent].
 There is no default export.
 
-### `transparent(node)`
+### `transparent(value)`
 
-Check if the given value is a [*transparent*][spec] [*element*][element].
+Check if a node is an element with a [*transparent content model*][spec].
 
 ###### Parameters
 
-*   `node` (`*`) — value to check, probably [`Element`][element].
+*   `value` (`unknown`)
+    — thing to check (typically [`Node`][node])
 
 ###### Returns
 
-Whether `node` passes the test (`boolean`).
+Whether `value` is an element with a transparent content model.
+
+The elements `a`, `audio`, `canvas`, `datalist`, `dd`, `del`, `ins`, `map`,
+`menu`, `noscript`, `object`, `ol`, `picture`, `select`, `table`, `tbody`,
+`tfoot`, `thead`, `tr`, `ul`, and `video` have transparent content models.
 
 ## Types
 
@@ -103,7 +108,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Security
@@ -210,6 +215,8 @@ abide by its terms.
 
 [hast]: https://github.com/syntax-tree/hast
 
-[element]: https://github.com/syntax-tree/hast#element
+[node]: https://github.com/syntax-tree/hast#nodes
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
+
+[transparent]: #transparentvalue
