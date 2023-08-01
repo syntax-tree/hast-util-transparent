@@ -1,12 +1,13 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {transparent} from './index.js'
+import {transparent} from 'hast-util-transparent'
 
 test('transparent', async function (t) {
   await t.test('should expose the public api', async function () {
-    assert.deepEqual(Object.keys(await import('./index.js')).sort(), [
-      'transparent'
-    ])
+    assert.deepEqual(
+      Object.keys(await import('hast-util-transparent')).sort(),
+      ['transparent']
+    )
   })
 
   await t.test('should return `false` without node', async function () {
