@@ -10,6 +10,7 @@ test('transparent', () => {
     'should expose the public api'
   )
 
+  // @ts-expect-error: check how a missing `node` is handled.
   assert.equal(transparent(), false, 'should return `false` without node')
 
   assert.equal(transparent(null), false, 'should return `false` with `null`')
