@@ -47,14 +47,14 @@ npm install hast-util-transparent
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {transparent} from 'https://esm.sh/hast-util-transparent@2'
+import {transparent} from 'https://esm.sh/hast-util-transparent@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {transparent} from 'https://esm.sh/hast-util-transparent@2?bundle'
+  import {transparent} from 'https://esm.sh/hast-util-transparent@3?bundle'
 </script>
 ```
 
